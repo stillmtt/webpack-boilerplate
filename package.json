@@ -1,0 +1,46 @@
+{
+  "name": "webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "validate": "npm-run-all --parallel validate-webpack:*",
+    "validate-webpack:dev": "webpack-validator webpack.config.js --env.dev",
+    "validate-webpack:prod": "webpack-validator webpack.config.js --env.prod",
+    "start": "webpack-dev-server --env.dev --content-base dist",
+    "build": "webpack --env.dev",
+    "build:prod": "webpack --env.prod -p",
+    "setup": "npm install && npm run validate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stillmtt/webpack-boilerplate.git"
+  },
+  "author": "stillmtt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stillmtt/webpack-boilerplate/issues"
+  },
+  "homepage": "https://github.com/stillmtt/webpack-boilerplate#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel": "6.5.2",
+    "babel-core": "6.9.1",
+    "babel-loader": "6.2.4",
+    "babel-plugin-__coverage__": "11.0.0",
+    "babel-preset-es2015-webpack": "6.4.1",
+    "babel-preset-stage-2": "6.5.0",
+    "css-loader": "0.23.1",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.22.0",
+    "node-sass": "^3.8.0",
+    "npm-run-all": "2.2.0",
+    "sass-loader": "^4.0.0",
+    "style-loader": "0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "2.1.0-beta.13",
+    "webpack-dev-server": "2.0.0-beta",
+    "webpack-validator": "2.1.3"
+  }
+}
