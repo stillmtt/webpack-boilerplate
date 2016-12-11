@@ -1,1 +1,1 @@
-# webpack-boilerplate
+# webpack features testing
