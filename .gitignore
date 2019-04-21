@@ -1,7 +1,6 @@
 *.sublime-workspace
 /node_modules
 /dist
-/app
 _*
 
 

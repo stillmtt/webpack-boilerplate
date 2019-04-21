@@ -1,1 +1,1 @@
-# webpack starting points
+# webpack boilerplate

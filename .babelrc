@@ -1,14 +1,12 @@
 {
-  "presets": [
-    ["es2015", {"modules": false}],
-    "es2016",
-    "stage-2"
-  ],
-  "env": {
-    "test": {
-      "plugins": [
-        ["__coverage__", {"ignore": "*.+(test|stub).*"}]
-      ]
-    }
-  }
+    "presets": [
+        [
+            "@babel/env",
+            {
+                "useBuiltIns": "usage",
+                "loose": true
+            }
+        ],
+        "@babel/react"
+    ]
 }
